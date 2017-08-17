@@ -1,0 +1,125 @@
+{
+	"metadata": {
+		"version": 4.5,
+		"type": "Object",
+		"generator": "Object3D.toJSON"
+	},
+	"geometries": [
+		{
+			"uuid": "9CA40B50-7C08-48DF-9466-B49890B9AB6E",
+			"type": "CylinderBufferGeometry",
+			"radiusTop": 0.44,
+			"radiusBottom": 1,
+			"height": 2,
+			"radialSegments": 32,
+			"heightSegments": 1,
+			"openEnded": false
+		},
+		{
+			"uuid": "840B5FDA-B7FF-44B3-B853-3C708E53D521",
+			"type": "SphereBufferGeometry",
+			"radius": 1,
+			"widthSegments": 32,
+			"heightSegments": 16,
+			"phiStart": 0,
+			"phiLength": 6.283185,
+			"thetaStart": 0,
+			"thetaLength": 3.141593
+		},
+		{
+			"uuid": "61AFB296-B80B-44EB-AD4F-0B3A7AA23388",
+			"type": "TorusBufferGeometry",
+			"radius": 2,
+			"tube": 1,
+			"radialSegments": 32,
+			"tubularSegments": 12,
+			"arc": 6.283185
+		},
+		{
+			"uuid": "E8F7A61F-5F6B-465D-A625-3C1A757DD73B",
+			"type": "BoxBufferGeometry",
+			"width": 1,
+			"height": 1,
+			"depth": 1
+		}],
+	"materials": [
+		{
+			"uuid": "04DD69BB-4155-4B70-89CE-A4F6D11571F1",
+			"type": "MeshBasicMaterial",
+			"name": "Barra",
+			"color": 14937569,
+			"depthFunc": 3,
+			"depthTest": true,
+			"depthWrite": true,
+			"skinning": false,
+			"morphTargets": false,
+			"dithering": false
+		},
+		{
+			"uuid": "BCFA25CC-FA43-43AA-B1C6-26D3FFB8EFCD",
+			"type": "MeshBasicMaterial",
+			"color": 10105651,
+			"depthFunc": 3,
+			"depthTest": true,
+			"depthWrite": true,
+			"skinning": false,
+			"morphTargets": false,
+			"dithering": false
+		}],
+	"object": {
+		"uuid": "0F3A35CF-1381-44EE-BBE6-DB98D7B637E4",
+		"type": "Group",
+		"name": "Wind turbine",
+		"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
+		"children": [
+			{
+				"uuid": "166DEFDD-A2D5-42EB-969A-B3F335BCAE77",
+				"type": "Mesh",
+				"name": "Palo",
+				"matrix": [0.8,0,0,0,0,9.639434,0,0,0,0,0.8,0,0,9.735944,0,1],
+				"geometry": "9CA40B50-7C08-48DF-9466-B49890B9AB6E",
+				"material": "04DD69BB-4155-4B70-89CE-A4F6D11571F1"
+			},
+			{
+				"uuid": "30E7B936-D3D9-48CD-A6EE-9B57295492AB",
+				"type": "Mesh",
+				"name": "Sfera",
+				"matrix": [1.14,0,0,0,0,1.14,0,0,0,0,2.639088,0,0,20.231383,-0.796818,1],
+				"geometry": "840B5FDA-B7FF-44B3-B853-3C708E53D521",
+				"material": "04DD69BB-4155-4B70-89CE-A4F6D11571F1"
+			},
+			{
+				"uuid": "DDA469D5-73F0-4EF0-9C97-F150260ABD9A",
+				"type": "Mesh",
+				"name": "Ciambella",
+				"matrix": [0.3,0,0,0,0,0.3,0,0,0,0,0.3,0,0,20.223718,1.792032,1],
+				"geometry": "61AFB296-B80B-44EB-AD4F-0B3A7AA23388",
+				"material": "BCFA25CC-FA43-43AA-B1C6-26D3FFB8EFCD",
+				"children": [
+					{
+						"uuid": "A8687C3D-FACB-4513-9A76-F7D9B0FFEF70",
+						"type": "Mesh",
+						"name": "Pala 1",
+						"matrix": [18.878469,-9.577594,0,0,0.886406,1.747202,0,0,0,0,0.22873,0,-11.678219,5.53,-0.040333,1],
+						"geometry": "E8F7A61F-5F6B-465D-A625-3C1A757DD73B",
+						"material": "04DD69BB-4155-4B70-89CE-A4F6D11571F1"
+					},
+					{
+						"uuid": "C3EA30F4-89F1-45FB-9BE9-BD7E125FD912",
+						"type": "Mesh",
+						"name": "Pala 2",
+						"matrix": [18.406345,10.45626,0,0,-0.967726,1.703507,0,0,0,0,0.22873,0,11.318931,5.532859,-0.040333,1],
+						"geometry": "E8F7A61F-5F6B-465D-A625-3C1A757DD73B",
+						"material": "04DD69BB-4155-4B70-89CE-A4F6D11571F1"
+					},
+					{
+						"uuid": "F7F81F0C-468B-4E3F-9EF6-3169F557FD6F",
+						"type": "Mesh",
+						"name": "Pala 3",
+						"matrix": [0,21.169008,0,0,-1.959191,0,0,0,0,0,0.22873,0,0.018406,-13.299619,-0.040333,1],
+						"geometry": "E8F7A61F-5F6B-465D-A625-3C1A757DD73B",
+						"material": "04DD69BB-4155-4B70-89CE-A4F6D11571F1"
+					}]
+			}]
+	}
+}
